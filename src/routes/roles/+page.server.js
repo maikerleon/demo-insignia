@@ -113,7 +113,7 @@ export const actions = {
             if ( role === 'dependence' && !['super-admin'].includes(userData.data.role)  ) {
                 throw new Error('inesperado');
             }else if ( role === 'dependence' && !dependence) {
-                throw new Error('una dependencia válida');
+                throw new Error('una area válida');
             }
 
             if ( role === 'coordination' && !['super-admin','dependence'].includes(userData.data.role)  ) {

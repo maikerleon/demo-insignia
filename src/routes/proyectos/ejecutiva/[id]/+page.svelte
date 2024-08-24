@@ -146,7 +146,7 @@
         </div>
         <div class="col-span-1 sm:col-span-2 flex items-start flex-col gap-y-4">
             <header class="w-full">
-                <h2 class="text-center text-2xl font-semibold">{project.dependence?.data?.label ? project.dependence?.data?.label : 'Sin dependencia'}</h2>
+                <h2 class="text-center text-2xl font-semibold">{project.dependence?.data?.label ? project.dependence?.data?.label : 'Sin area'}</h2>
             </header>
     
             <div class="flex flex-col gap-2 w-full">

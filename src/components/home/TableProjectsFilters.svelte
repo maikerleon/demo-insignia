@@ -294,7 +294,7 @@
                             cell.value = project.name || 'Sin nombre de proyecto';
                             break;
                         case 'dependence':
-                            cell.value = project.dependence?.data?.label || 'Sin dependencia';
+                            cell.value = project.dependence?.data?.label || 'Sin area';
                             break;
                         case 'secretaries':
                             cell.value = project.secretaries?.data ? project.secretaries?.data.map(s => s.label).join(', ') : 'Sin corresponsables';
@@ -1086,7 +1086,7 @@
                             </td>
                             <td class:hidden={!fields.dependence.active} class="px-2 py-3">
                                 <div class="w-[300px]">
-                                    {item.dependence?.data?.label || 'Sin dependencia'}
+                                    {item.dependence?.data?.label || 'Sin area'}
                                 </div>
                             </td>
                             <td class:hidden={!fields.secretaries.active} class="px-2 py-3">

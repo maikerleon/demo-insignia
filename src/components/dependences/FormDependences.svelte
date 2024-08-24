@@ -53,7 +53,7 @@
                 return;
             }
 
-            handleLoading('Subiendo logo de la dependencia...');
+            handleLoading('Subiendo logo de la area...');
 
             let currentFileIndex = 0;
 
@@ -90,7 +90,7 @@
 
     const beforeUpdateData = async () => {
         await handleSendLogo();
-        messageAlert('success', `Dependencia ${form?.create ? 'registrada' : 'actualizada'} correctamente`);
+        messageAlert('success', `area ${form?.create ? 'registrada' : 'actualizada'} correctamente`);
         dispatch('handleAddDependence', {detail: dependenceSee, create: form?.create});
         delete form.success;
     }
@@ -181,7 +181,7 @@
                         <ImageIcon size={200} />
                     {:else}
                         <figure>
-                            <img src={logo} loading="lazy" alt="Logo de dependencia">
+                            <img src={logo} loading="lazy" alt="Logo de area">
                         </figure>
                     {/if}
                 </div>

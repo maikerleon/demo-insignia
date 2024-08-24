@@ -387,7 +387,7 @@
                     </li> -->
                     <li class="w-full">
                         <label class="flex flex-row w-full justify-between active:bg-red-500" for="col_dependence">
-                            Dependencia
+                            area
                             <input type="checkbox" class="checkbox checkbox-xs" id="col_dependence" bind:checked={cols.dependence} />
                         </label>
                     </li>
@@ -446,7 +446,7 @@
                 <th class="py-3 px-4">Tipo</th>
               {/if}
               {#if cols.dependence}
-                <th class="py-3 px-4">Dependencia</th>
+                <th class="py-3 px-4">area</th>
               {/if}
               {#if cols.manager}
                 <th class="py-3 px-4">Encargado</th>

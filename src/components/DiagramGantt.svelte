@@ -484,7 +484,7 @@
                                 {#if !dataDiagram.dependence.data?.logo || dataDiagram.dependence.data?.logo === '' }
                                     {dataDiagram.dependence.data?.abbr ?? '-'}
                                 {:else}
-                                    <img src={dataDiagram.dependence.data?.logo} alt="Logo de dependencia" width="60">
+                                    <img src={dataDiagram.dependence.data?.logo} alt="Logo de area" width="60">
                                 {/if}
                             </span>
                             <div class="sm:pl-1 text-xs max-w-full truncate">{dataDiagram.dependence.data.label}</div>
@@ -535,7 +535,7 @@
                                     {#if !act.dependence?.data?.logo || act.dependence?.data?.logo === '' }
                                         {act.dependence?.data?.abbr ?? '-'}
                                     {:else}
-                                        <img src={act.dependence?.data?.logo} alt="Logo de dependencia" width="60">
+                                        <img src={act.dependence?.data?.logo} alt="Logo de area" width="60">
                                     {/if}
                                 </span>
                                 <span class="pl-1 text-xs hidden sm:block truncate">{act.dependence?.data?.label ?? 'Desconocida'}</span>

@@ -82,7 +82,7 @@ export const actions = {
             const device = await request.headers.get('user-agent');
             const ip = await request.headers.get('x-forwarded-for') || 'localhost';
             
-            await registerLogs(userData.data.id, ip, device, `Ha ${create ? 'creado' : 'editado'} la dependencia ${uniqueID}`);
+            await registerLogs(userData.data.id, ip, device, `Ha ${create ? 'creado' : 'editado'} la area ${uniqueID}`);
 
             if (create) {
                 dataReturn.id = uniqueID;

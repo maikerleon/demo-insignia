@@ -99,7 +99,7 @@
                 <Map bind:clicked={clicked} bind:selectedMunicipality={selectedMunicipality} projects={allData.projects} />
             </div>
             <div class="flex justify-start col-span-1 sm:col-span-5 flex-col sm:mt-0 mt-5">
-                <h2 class="uppercase text-2xl mb-5 text-center font-semibold text-ins-700">Avance por dependencia</h2>
+                <h2 class="uppercase text-2xl mb-5 text-center font-semibold text-ins-700">Avance por area</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {#each dependences as dependence }
                         <ArticleStatisticsDependence bind:selectedDependence={selectedDependence} bind:principalSection={principalSection} dependence={dependence} dataSee={{total: filteredData.projects.details[dependence.id]?.total ?? 0, real: filteredData.projects.details[dependence.id]?.real ?? 0}} />

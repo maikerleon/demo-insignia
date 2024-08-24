@@ -251,7 +251,7 @@
                 row.getCell(1).value = project.name;
                 row.getCell(2).value = formatDateString(project.start);
                 row.getCell(3).value = formatDateString(project.end);
-                row.getCell(4).value = project.dependence?.data?.label || 'Sin dependencia';
+                row.getCell(4).value = project.dependence?.data?.label || 'Sin area';
                 row.getCell(5).value = `${getLatestProgress(project) || calculateProgressActions(project.actions.list)}%`;
                 row.getCell(6).value = project.note || 'Sin nota';
                 row.getCell(7).value = statutes.find(s=> s.value === project.status)?.label || 'Sin estatus';
@@ -561,7 +561,7 @@
                     <th class="py-3 px-4 max-w-72 w-10">#</th>
                     <th class="py-3 px-2">Nombre</th>
                     <th class="py-3 px-2">Fecha</th>
-                    <th class="py-3 px-2" class:hidden={typeTable !== 'project'}>Dependencia</th>
+                    <th class="py-3 px-2" class:hidden={typeTable !== 'project'}>area</th>
                     <th class="py-3 px-2" class:hidden={typeTable !== 'dependence'}>Corresponsable(s)</th>
                     <th class="py-3 px-2">
                         <div class="flex items-center space-x-2">

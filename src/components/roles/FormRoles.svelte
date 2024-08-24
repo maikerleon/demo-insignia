@@ -91,10 +91,10 @@
 
                 {#if ['dependence','coordination','municipality','register'].includes(adminSee.role) && ['super-admin','super-view'].includes(role)}
                     <section>
-                        <label class="text-gray-700" for="dependence">Dependencia</label>
+                        <label class="text-gray-700" for="dependence">area</label>
                         <div class="relative w-full mt-2">
                             <select bind:value={adminSee.dependence} class="{formStyleSelect}" id="dependence" name="dependence">
-                                <option disabled value={null}>Seleccione una dependencia</option>
+                                <option disabled value={null}>Seleccione una area</option>
                                 {#each dependences as dep }
                                     <option value={dep.id}>{dep.name}</option>
                                 {/each}

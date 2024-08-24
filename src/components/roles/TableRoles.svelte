@@ -136,7 +136,7 @@
               <th class="py-3 px-4">#</th>
               <th class="py-3 px-2">Nombre</th>
               <th class="py-3 px-2">Teléfono</th>
-              <th class="py-3 px-2">Dependencia</th>
+              <th class="py-3 px-2">area</th>
               <th class="py-3 px-2 w-8">
                 <EditIcon />
               </th>

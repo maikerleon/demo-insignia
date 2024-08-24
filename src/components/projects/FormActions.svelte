@@ -303,8 +303,8 @@
                 </div>
 
                 <div class="gap-2 grid grid-cols-1">
-                    <label class="text-gray-700" for="dependence">Dependencia</label>
-                    <Select items={dependences} bind:value={dataSee.dependence.data} showChevron placeholder="seleccione la dependencia" name="dependence" id="dependence">
+                    <label class="text-gray-700" for="dependence">area</label>
+                    <Select items={dependences} bind:value={dataSee.dependence.data} showChevron placeholder="seleccione la area" name="dependence" id="dependence">
                         <div class="text-center p-3 text-gray-400" slot="empty">No se encontraron resultados</div>
                     </Select>
                 </div>
@@ -533,8 +533,8 @@
                                     </select>
                                 </div>
                                 <div class="flex flex-col gap-y-0.5">
-                                    <label for="start_action_{index}" class="text-xs font-semibold text-gray-600">Dependencia</label>
-                                    <Select clearable={false} id="dependence_action_{index}" name="dependence_action_{index}" items={dependences} bind:value={act.dependence.data} placeholder="seleccione una dependencia">
+                                    <label for="start_action_{index}" class="text-xs font-semibold text-gray-600">area</label>
+                                    <Select clearable={false} id="dependence_action_{index}" name="dependence_action_{index}" items={dependences} bind:value={act.dependence.data} placeholder="seleccione una area">
                                         <div class="text-center p-3 text-gray-400 text-xs" slot="empty">No se encontraron resultados</div>
                                     </Select>
                                 </div>

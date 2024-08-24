@@ -322,7 +322,7 @@ export const actions = {
             if ( !strategy || strategy === '' ) throw new Error('una estrategia válida');
             if ( !regions || regions === '' ) throw new Error('una región válida');
             if ( !municipalities || municipalities === '' ) throw new Error('un municipio válido');
-            if ( !dependence || dependence === '' ) throw new Error('una dependencia válida');
+            if ( !dependence || dependence === '' ) throw new Error('una area válida');
             if ( !manager || manager === '' ) throw new Error('un responsable válido');
             if ( source.length === 0 ) throw new Error('al menos una fuente del recurso válida');
             if ( indicators.length === 0 ) throw new Error('al menos un indicador de impacto válido');

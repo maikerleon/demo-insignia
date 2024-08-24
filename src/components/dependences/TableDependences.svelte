@@ -49,7 +49,7 @@
 
         const result = await Swal.fire({
             title: "¡No podrás revertir esto!",
-            text: `¿Estás seguro de eliminar está dependencia?`,
+            text: `¿Estás seguro de eliminar está area?`,
             icon: 'warning',
             focusCancel: true,
             showCancelButton: true,
@@ -81,7 +81,7 @@
                         dependences.splice(adminIndex, 1);
                     }
                     filteredDependences();
-                    messageAlert('success',`Se ha eliminado la dependencia con éxito`);
+                    messageAlert('success',`Se ha eliminado la area con éxito`);
                     return;
                 }
 
@@ -151,7 +151,7 @@
             <SearchIcon />
             <input name="search" type="text" bind:value={search} placeholder="Buscador..." class="text-sm w-full py-2.5 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white focus:border-ins-400"/>
         </div>
-        <ButtonLight text="Agregar dependencia" action={handleAdd} styles="mt-2 sm:mt-0 w-3/5 sm:w-auto flex justify-center" >
+        <ButtonLight text="Agregar area" action={handleAdd} styles="mt-2 sm:mt-0 w-3/5 sm:w-auto flex justify-center" >
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-user-plus" width="18" height="18" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />

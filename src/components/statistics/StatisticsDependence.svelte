@@ -129,7 +129,7 @@
                 <div>
                     <div class="sm:w-36 sm:h-36 w-24 h-24 overflow-hidden rounded-full border-4 border-ins-600 shadow-md">
                         {#if dependence?.admin?.photo && dependence?.admin?.photo !== ''}
-                            <img src="{dependence?.admin?.photo}" alt="Foto de perfil del responsable de dependencia" class="w-full h-full object-cover">
+                            <img src="{dependence?.admin?.photo}" alt="Foto de perfil del responsable de area" class="w-full h-full object-cover">
                         {:else}
                             <UserIcon styles="w-full h-full" />
                         {/if}

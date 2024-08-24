@@ -18,7 +18,7 @@ export async function POST({ request, cookies }) {
 
     const response = await deleteDependence(dependence);
     
-    await registerLogs(userData.data.id, ip, device, `Ha eliminado la dependencia ${dependence}`);
+    await registerLogs(userData.data.id, ip, device, `Ha eliminado la area ${dependence}`);
 
     return json({
         success: response.success

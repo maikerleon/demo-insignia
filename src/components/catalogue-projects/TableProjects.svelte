@@ -52,7 +52,7 @@
                 row.getCell(1).value = project.name;
                 row.getCell(2).value = formatDateString(project.start);
                 row.getCell(3).value = formatDateString(project.end);
-                row.getCell(4).value = project.dependence?.data?.label ?? 'Sin dependencia';
+                row.getCell(4).value = project.dependence?.data?.label ?? 'Sin area';
                 row.getCell(5).value = getStatusFromProgress(project.progress, project.status);
 
                 row.commit();
@@ -179,7 +179,7 @@
           <tr>
               <th class="py-3 px-4 max-w-16 w-10">#</th>
                 <th class="py-3 px-4">Nombre</th>
-                <th class="py-3 px-4">Dependencia</th>
+                <th class="py-3 px-4">area</th>
                 <th class="py-3 px-4">Estatus</th>
               <th class="py-3 pl-1 pr-4 w-8"></th>
           </tr>

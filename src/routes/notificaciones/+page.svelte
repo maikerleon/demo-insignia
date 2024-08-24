@@ -325,7 +325,7 @@
                         <td class="p-2 uppercase">
                             <div class="flex flex-col max-w-52 [&>span]:truncate [&>span]:max-w-full">
                                 <span>{manager.data?.label ?? 'Sin responsable'}</span>
-                                <span>{dependence.data?.label ?? 'Sin dependencia'}</span>
+                                <span>{dependence.data?.label ?? 'Sin area'}</span>
                             </div>
                         </td>
                         <td class="p-2">

@@ -105,7 +105,7 @@
                     </li>
                     <li class="w-full">
                         <label class="flex flex-row w-full justify-between active:bg-red-500" for="col_dependence">
-                            Dependencia
+                            area
                             <input type="checkbox" class="checkbox checkbox-xs" id="col_dependence" bind:checked={cols.dependence} />
                         </label>
                     </li>
@@ -144,7 +144,7 @@
                 <th class="py-3 px-2">Proyecto</th>
               {/if}
               {#if cols.dependence}
-                <th class="py-3 px-2">Dependencia</th>
+                <th class="py-3 px-2">area</th>
               {/if}
               {#if cols.manager}
                 <th class="py-3 px-2">Encargado</th>
@@ -184,7 +184,7 @@
                         {/if}
                         {#if cols.dependence}
                             <td class="px-2 py-3 whitespace-nowrap max-w-28 truncate">
-                                {item.dependence?.data?.label ?? 'Sin dependencia'}
+                                {item.dependence?.data?.label ?? 'Sin area'}
                             </td>
                         {/if}
                         {#if cols.manager}
