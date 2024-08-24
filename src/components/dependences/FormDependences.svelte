@@ -117,7 +117,7 @@
 
 <div class="sm:max-w-screen-xl max-w-screen-sm mx-auto px-4 sm:px-2">
     <div class="w-full flex flex-col justify-between">
-        <SectionTitle title="Dependencias" />
+        <SectionTitle title="Areas" />
         <section class="flex justify-end mt-6">
             <ButtonLight text="Ir atrás" action={handleToggleTable} >
                 <GoBackIcon />

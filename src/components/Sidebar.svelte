@@ -149,8 +149,8 @@
                 icon: NotificationIcon
             },
             {
-                title: 'Dependencias',
-                link: '/dependencias',
+                title: 'Areas',
+                link: '/areas',
                 who: ['super-admin', 'super-view'],
                 icon: DependenceIcon
             },

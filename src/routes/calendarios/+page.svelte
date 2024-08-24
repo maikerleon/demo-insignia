@@ -455,9 +455,9 @@
 
 			{#if role !== 'dependence' }
 				<div class="dropdown dropdown-bottom w-full sm:w-36 max-w-full sm:mr-2">
-					<span class="text-xs font-semibold text-gray-600 pl-0.5">Dependencias</span>
+					<span class="text-xs font-semibold text-gray-600 pl-0.5">Areas</span>
 					<div tabindex="-1" role="button" class="w-full px-3 py-2.5 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none  flex items-center justify-between">
-						Dependencias
+						Areas
 						<ChevronIcon size={18} styles="text-black" />
 					</div>
 					<div tabindex="-1" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-lg w-64 truncate">

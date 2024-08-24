@@ -144,7 +144,7 @@
   
 <div class="sm:max-w-screen-xl max-w-screen-sm mx-auto px-4 sm:px-2">
     <div class="w-full flex flex-row justify-start items-center">
-        <SectionTitle title="Dependencias" />
+        <SectionTitle title="Areas" />
     </div>
     <section class="flex justify-between items-center mt-6 flex-col sm:flex-row">
         <div class="relative {!search ? 'sm:w-40 hover:w-96' : 'sm:w-96' } transition-all duration-300 w-[90%]">
@@ -227,7 +227,7 @@
                     <td colspan="6" class="p-4">
                         <section class="text-center flex items-center w-full justify-center">
                             <DependenceIcon size="20" />
-                            <strong class="ml-2 font-semibold text-gray-700">No se encontraron dependencias</strong>
+                            <strong class="ml-2 font-semibold text-gray-700">No se encontraron Areas</strong>
                         </section>
                     </td>
                 </tr>

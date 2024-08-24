@@ -234,8 +234,8 @@
                                             <RssIcon size={60} />
                                         </a>
                                     {:else}
-                                        <a href="/dependencias" class="hover:scale-[1.03] transition-all duration-300 flex justify-center items-center flex-col px-1 py-3 gap-3 hover:bg-ins-600 w-full rounded-md">
-                                            Dependencias
+                                        <a href="/areas" class="hover:scale-[1.03] transition-all duration-300 flex justify-center items-center flex-col px-1 py-3 gap-3 hover:bg-ins-600 w-full rounded-md">
+                                            Areas
                                             <DependenceIcon size={60} />
                                         </a>
                                     {/if}

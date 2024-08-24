@@ -18,7 +18,7 @@ export async function POST({ request, cookies }) {
 
     const response = await changeOrderBy(dependences);
     
-    await registerLogs(userData.data.id, ip, device, `Ha cambiado el order by de las dependencias`);
+    await registerLogs(userData.data.id, ip, device, `Ha cambiado el order by de las Areas`);
 
     return json({
         success: response.success
