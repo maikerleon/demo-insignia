@@ -141,7 +141,7 @@
                             {/each}
                         {:else}
                             <div class="flex flex-col justify-center items-center gap-2">
-                                <header class="bg-orange-600 rounded-md text-gray-100 text-lg uppercase font-semibold p-2 flex flex-row justify-center items-center gap-2 w-full">
+                                <header class="bg-ins-600 rounded-md text-gray-100 text-lg uppercase font-semibold p-2 flex flex-row justify-center items-center gap-2 w-full">
                                     <CalendarClockIcon size={28} />
                                     <h3>Próximos eventos</h3>
                                 </header>
@@ -152,13 +152,13 @@
                                                 <ChevronLeftIcon size={28} styles="stroke-2" />
                                             </button>
                                         {:else}
-                                            <button class="hover:text-white text-orange-600 hover:bg-orange-600 rounded-xl p-1 border border-orange-600" on:click={() => changeMonth('back')}>
+                                            <button class="hover:text-white text-orange-600 hover:bg-ins-600 rounded-xl p-1 border border-orange-600" on:click={() => changeMonth('back')}>
                                                 <ChevronLeftIcon size={28} styles="stroke-2" />
                                             </button>
                                         {/if}
                                     </div>
                                     <div class="col-span-8">
-                                        <h4 class="bg-orange-700 text-white rounded-md p-1 uppercase">{dateRanges[selectedMonth]}</h4>
+                                        <h4 class="bg-ins-700 text-white rounded-md p-1 uppercase">{dateRanges[selectedMonth]}</h4>
                                         <div class="py-8 px-4 flex flex-col gap-2">
                                             {#each pendingEvents[selectedMonth] as event }
                                                 <article class="flex-row flex items-center bg-gray-200 py-1 px-3 rounded-md border border-gray-500/50">
@@ -185,7 +185,7 @@
                                                 <ChevronRightIcon size={28} styles="stroke-2" />
                                             </button>
                                         {:else}
-                                            <button class="hover:text-white text-orange-600 hover:bg-orange-600 rounded-xl p-1 border border-orange-600" on:click={() => changeMonth('follow')}>
+                                            <button class="hover:text-white text-orange-600 hover:bg-ins-600 rounded-xl p-1 border border-orange-600" on:click={() => changeMonth('follow')}>
                                                 <ChevronRightIcon size={28} styles="stroke-2" />
                                             </button>
                                         {/if}
