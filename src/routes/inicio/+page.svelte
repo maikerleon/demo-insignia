@@ -1,6 +1,4 @@
 <script>
-	import GoBackIcon from '$icons/GoBackIcon.svelte';
-	import ButtonLight from '$components/ButtonLight.svelte';
 	import GridHome from '$components/home/GridHome.svelte';
 	import RssIcon from '$icons/RssIcon.svelte';
 	import ExternalLink from '$icons/ExternalLink.svelte';
@@ -13,7 +11,6 @@
 	import BlackhoeIcon from '$icons/BlackhoeIcon.svelte';
     import { closeAlert, formatDate } from "$lib/utilities";
     import { fade } from 'svelte/transition';
-    import IntroMenu from '$components/home/IntroMenu.svelte';
 
     export let data;
     const {role, dependences, dependence, axis} = data;
@@ -113,8 +110,6 @@
     }
 
     searchEvents();
-
-    let intro = true;
 
 </script>
 
@@ -263,25 +258,8 @@
     {/if}
 {/if}
 
-{#if !['governor', 'chief'].includes(role) }
-    <div class="md:mt-12 p-3 sm:p-0">
-        {#if ['super-admin', 'super-view', 'governor', 'chief', 'dependence'].includes(role) }
-            <GridHome {dependences} dependenceId={dependence} bind:dependenceSelected={dependenceSelected} {role} {axis} />
-        {/if}
-    </div>
-{:else}
-    {#if intro }
-        <IntroMenu bind:intro={intro} />
-    {:else}
-        <div class="flex justify-end">
-            <ButtonLight text="Ir al inicio" styles='max-h-10 max-w-fit align-end' action={() => intro = true}>
-                <GoBackIcon size={20} styles='mr-1' />
-            </ButtonLight>
-        </div>
-        <div class="md:mt-12 p-3 sm:p-0">
-            {#if ['super-admin', 'super-view', 'governor', 'chief', 'dependence'].includes(role) }
-                <GridHome {dependences} dependenceId={dependence} bind:dependenceSelected={dependenceSelected} {role} {axis} />
-            {/if}
-        </div>
+<div class="md:mt-12 p-3 sm:p-0">
+    {#if ['super-admin', 'super-view', 'governor', 'chief', 'dependence'].includes(role) }
+        <GridHome {dependences} dependenceId={dependence} bind:dependenceSelected={dependenceSelected} {role} {axis} />
     {/if}
-{/if}
+</div>
