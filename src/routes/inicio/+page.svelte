@@ -116,7 +116,6 @@
 {#if !dependenceSelected }
     <section class="grid-cols-2 sm:grid-cols-5 grid gap-1 sm:gap-10 items-center p-3 sm:p-0">
         
-        {#if !['governor', 'chief'].includes(role) }
             <article class="col-span-2 sm:col-span-3 flex items-center sm:order-1 order-2 sm:mt-0 mt-5">
                 <div class="text-gray-600 gap-x-12 items-center justify-between">
                     <div class="flex-none space-y-5 px-4 sm:px-0 mt-5">
@@ -245,7 +244,6 @@
                 {/if}
                 
             </article>
-        {/if}
 
     </section>
 {/if}
